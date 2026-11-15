@@ -55,8 +55,7 @@ resource "aws_route_table" "public" {
 }
 
 resource "aws_route_table_association" "public" {
-  subnet_id      = aws_subnet.public.id
-  route_table_id = aws_route_table.public.id
+  subnet_id = aws_subnet.public.id
 }
 
 # ---------- Listing 2.2 : security groups ----------
